@@ -1,0 +1,61 @@
+@import '../../sass/variables';
+
+.pagination {
+    text-align: center;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border-radius: 3px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+        li {
+            float: left;
+        }
+    }
+
+    .page {
+        cursor: pointer;
+        float: left;
+        padding: 0 14px;
+        line-height: 34px;
+        text-decoration: none;
+        border: 1px solid #dddddd;
+        border-left-width: 0;
+        color: $mainYellow;
+        background-color: #f5f5f5 ;
+
+        &:hover {
+            background-color: #ffffff;
+        }
+
+        &:first-child  {
+            border-left-width: 1px;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    .disabled {
+        cursor: default;
+        pointer-events: none;
+        color: #999999;
+        background-color: #f5f5f5;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+   .pagination {
+       position: sticky;
+       top: 0;
+
+       ul {
+           padding-top: 0;
+       }
+
+       .page {
+           background-color: white;
+       }
+   }
+}

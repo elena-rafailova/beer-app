@@ -1,0 +1,102 @@
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("images/background.jpg");
+    background-size: auto;
+    box-shadow: inset 0 0 0 1000px var(--mainBackgroundColor);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--textColor);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #888888;
+}
+
+.filters-enter {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.filters-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.filters-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.filters-exit-active {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.login-text-enter {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.login-text-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.login-text-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.login-text-exit-active {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.login-img-enter {
+    transform: translateX(0);
+}
+
+.login-img-enter-active {
+    transform: translateX(-30px);
+    transition: transform 0.3s ease-out;
+}
+
+.login-img-exit {
+    transform: translateX(-30px);
+}
+
+.login-img-exit-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}

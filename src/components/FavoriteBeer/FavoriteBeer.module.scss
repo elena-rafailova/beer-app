@@ -1,0 +1,97 @@
+.productContainer {
+    padding: 0 15px;
+}
+
+.product {
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    padding: 0 25px;
+    overflow-y: hidden;
+    text-align: left;
+    border-radius: 20px;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+        background-color: var(--backgroundColorHover);
+    }
+
+    .beerImg {
+        display: block;
+        height: 200px;
+        margin: 10px auto;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.beerName {
+    box-sizing: border-box;
+    height: 10%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.imageAndBars {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+        margin: 10px 0;
+    }
+}
+
+.text {
+    height: 40%;
+    overflow-y: auto;
+    color: var(--textColor);
+
+    h4,
+    h5 {
+        margin: 10px 0;
+    }
+}
+
+.button {
+    height: 10%;
+}
+
+.progressBarWidth {
+    width: 170px;
+}
+
+.foods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    filter: var(--iconFilter);
+}
+
+.removeIcon {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: right;
+    margin: 10px 0;
+    filter: var(--iconFilter);
+
+    &:hover {
+        transform: scale(1.3);
+        transition: transform 0.3s ease-out;
+    }
+}

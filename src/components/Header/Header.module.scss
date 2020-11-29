@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    background-color: var(--headerBackground);
+    color: var(--textColor);
+
+    div {
+        width: 50%;
+        height: 100%;
+        padding: 5px;
+    }
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.icons {
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.heartIcon {
+    filter: var(--iconFilter);
+}
+
+.centerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.alignLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.alignRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}

@@ -1,0 +1,15 @@
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    border: 1px solid var(--textColor);
+    overflow: hidden;
+}
+
+.filler {
+    background-color: var(--progressBarColor);
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}

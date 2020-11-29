@@ -1,0 +1,51 @@
+.carouselContainer {
+    margin: 10px auto;
+}
+
+.carouselView {
+    overflow: hidden;
+    margin: auto;
+}
+
+.flexCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.componentList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carouselControl {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: calc(100% - 80px);
+    margin: 0 10px;
+
+    .icon {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        filter: var(--iconFilter);
+    }
+
+    &:first-of-type {
+        left: 0;
+    }
+
+    &:last-of-type {
+        right: 0;
+    }
+}
+
+.disabled .icon {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

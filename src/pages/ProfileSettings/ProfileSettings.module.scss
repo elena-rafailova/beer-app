@@ -1,0 +1,45 @@
+.container {
+    flex: 1;
+    width: 40%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--backgroundColor);
+}
+
+.profileImage {
+    border-radius: 50%;
+}
+
+.profileName {
+    text-transform: uppercase;
+}
+
+.setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+    label {
+        margin: 10px;
+    }
+}
+
+.select {
+    z-index: 10;
+    width: 150px;
+    margin: 10px;
+    color: black;
+}
+
+.logoutButton {
+    margin: 30px 10px 10px 0;
+}
+
+@media only screen and (max-width: 750px) {
+   .container {
+       width: 100%;
+   }
+}
