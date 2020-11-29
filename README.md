@@ -1,5 +1,7 @@
 This is my first React app, which I created back in April 2020. In this app I use Punk API https://punkapi.com/documentation/v2 for listing beers, filter, search through them and etc.
 
+Check it out here: https://suspicious-johnson-1c897f.netlify.app/
+
 ---------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
