@@ -19,7 +19,7 @@ const App = () => {
               autoClose={2500}
               hideProgressBar={true}
           />
-          <Router basename={'/beer-app/build'}>
+          <Router>
               <Switch>
                   <Route path="/" exact component={Login} />
                   <Route path="/login" component={Login} />
